@@ -16,13 +16,7 @@ form.addEventListener('submit', async (e) => {
         let dataUser = data.find(item => item.email == emailUser);
         sessionStorage.setItem('infoUser', JSON.stringify(dataUser));
         form.reset();
-        window.location.href = '../pages/home.html'
-      }
-      else if(email == email && user_type == "Admin"){
-        let admin = data.find(item => item.user_type == 'Admin');
-        sessionStorage.setItem('infoAdmin', JSON.stringify(admin));
-        form.reset();
-        window.location.href = '/admin_interfaz.html'
+        window.location.href = './pages/home.html'
       }
       else{
         alert("ESTE USUARIO NO EXISTE EN LA BASE DE DATOS!");
