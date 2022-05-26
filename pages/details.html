@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/details.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"/>
+
+    <title>Details Product</title>
+  </head>
+  <body>
+      <!-- NAVBAR -->
+      <nav class="navbar bg-white navbar-expand-lg order-1 order-lg-2 fixed-top">
+        <div class="container align-items-end">
+          <a class="navbar-brand navbar-logo order-2 order-sm-1 me-auto mr-lg-3 ms-3 ml-lg-0" href="#">
+            <img src="/images/logo.png" alt="" width="70" height="50" class="d-inline-block align-text-top img">
+            <div>
+                Realmod <br>
+                <span>Real State Agency</span>
+            </div>
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start order-lg-2" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Realmod</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Property
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+                <div class="d-flex gap-3 mb-3">
+                    <button class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-arrow-left-right"></i>
+                      <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </button>
+
+                    <button class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-heart"></i>
+                      <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </button>
+
+                    <button class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-person"></i>
+                      <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </button>     
+
+                    <a href="./carrito.html" class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-cart"></i>
+                      <span id="cart-length" class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </a>     
+                    <!-- Carrito compras -->
+                    
+
+                  <!-- FIN CARRITO -->
+                  </div>            
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="details">
+        <div class="container details-card">
+        </div>
+      </section>
+    
+    <script src="/Js/details.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

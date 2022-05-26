@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <title>Realmod | Real State Agency</title>
+  </head>
+  <body>
+
+      <!-- NAVBAR -->
+      <nav class="navbar bg-white navbar-expand-lg order-1 order-lg-2 fixed-top">
+        <div class="container align-items-end">
+          <a class="navbar-brand navbar-logo order-2 order-sm-1 me-auto mr-lg-3 ms-3 ml-lg-0" href="/index.html">
+            <img src="/images/logo.png" alt="" width="70" height="50" class="d-inline-block align-text-top img">
+            <div>
+                Realmod <br>
+                <span>Real State Agency</span>
+            </div>
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start order-lg-2" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Realmod</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Property
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+                <div class="d-flex gap-3 mb-3">
+                    <button class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-arrow-left-right"></i>
+                      <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </button>
+
+                    <button class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-heart"></i>
+                      <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </button>
+
+                    <button class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-person"></i>
+                      <span class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </button>     
+
+                    <a href="/pages/carrito.html" class="btn bg-light border-0 btn-sm rounded-fill position-relative" type="submit">
+                      <i class="bi bi-cart"></i>
+                      <span id="cart-length" class = "position-absolute top-0 start-100 translate-middle badge bg-secondary">0</span>
+                    </a>
+
+                  </div>            
+                  <div class="d-flex ms-5">
+                    <div class="input-group input-group-sm mb-3">
+                        <span class="input-group-text bg-success" id="basic-addon1"><i class="bi bi-plus-circle-fill"></i></span>
+                        <button class="btn bg-green border-0 btn-sm rounded-end" type="submit">Add property</button>
+                      </div>            
+                  </div>
+            </div>            
+          </div>
+        </div>
+      </nav>
+     
+
+  <!-- SECTION HERO - HOME -->
+  <section class="hero-main">
+      <div class="empty"></div>
+    <div class="container">
+        <div class="description">
+            <div class="col-lg-7">
+                <h1 id="text-gray">Properties</h1>
+                <h2>Find The Perfect Place to
+                    Live With your Family</h2>
+            </div>        
+            <div class="col">
+                <div class="botones mt-5">
+                    <button type="button" class="btn bg-green">Left</button>
+                    <button type="button" class="btn btn-secondary">Middle</button>
+                    <button type="button" class="btn btn-secondary rounded-start">Right</button>
+                  </div>
+                <div class="input-group mb-3">                    
+                    <input type="text" class="form-control border-0" placeholder="Enter keyword here ..." aria-label="Username" aria-describedby="basic-addon1">
+                    <select class="form-select border-0 border-start border-success rounded-end" id="inputGroupSelect01">
+                      <option selected disabled>Select Location...</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+
+                    <div class="input-group-text ms-2 border-0 rounded-start bg-white" id="btnGroupAddon"><i class="bi bi-sliders"></i></div>
+                    <button type="button" class="btn bg-green rounded-end"><i class="bi bi-search"></i> Search</button>
+                  </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION FEATURES -->
+
+<!-- collection -->
+    <section class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h6 class ="position-relative d-inline-block text-green-dark">Properties</h6>
+                <h1 id="text-green">Featured</h1>
+                <h2 class="font-ubuntu">Featured Listings</h2>
+            </div>
+
+            <div class = "row container cards-width">
+                <!-- Card 1 -->
+                <div class="card cards mb-3">
+                    <div class="card-body text-center">                    
+                        <div class="widget">
+                            <img src="/images/parking-area.png" width="40" height="40" alt="">
+                        </div>
+                        <h6 class="card-subtitle mb-5 text-muted">Parking Speace</h6>
+                        <button type="button" class="btn custom__button rounded-circle"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="card cards mb-3">
+                    <div class="card-body text-center">                    
+                        <div class="widget">
+                            <img src="/images/parking-area.png" width="40" height="40" alt="">
+                        </div>
+                        <h6 class="card-subtitle mb-5 text-muted">Parking Speace</h6>
+                        <button type="button" class="btn custom__button rounded-circle"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                <div class="card cards mb-3">
+                    <div class="card-body text-center">                    
+                        <div class="widget">
+                            <img src="/images/parking-area.png" width="40" height="40" alt="">
+                        </div>
+                        <h6 class="card-subtitle mb-5 text-muted">Parking Speace</h6>
+                        <button type="button" class="btn custom__button rounded-circle"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="card cards mb-3">
+                    <div class="card-body text-center">                    
+                        <div class="widget">
+                            <img src="/images/parking-area.png" width="40" height="40" alt="">
+                        </div>
+                        <h6 class="card-subtitle mb-5 text-muted">Parking Speace</h6>
+                        <button type="button" class="btn custom__button rounded-circle"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                <div class="card cards mb-3">
+                    <div class="card-body text-center">                    
+                        <div class="widget">
+                            <img src="/images/parking-area.png" width="40" height="40" alt="">
+                        </div>
+                        <h6 class="card-subtitle mb-5 text-muted">Parking Speace</h6>
+                        <button type="button" class="btn custom__button rounded-circle"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                  </div>
+
+                  <!-- Card 6 -->
+                <div class="card cards mb-3">
+                    <div class="card-body text-center">                    
+                        <div class="widget">
+                            <img src="/images/parking-area.png" width="40" height="40" alt="">
+                        </div>
+                        <h6 class="card-subtitle mb-5 text-muted">Parking Speace</h6>
+                        <button type="button" class="btn custom__button rounded-circle"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Properties -->
+    <section>
+        <div class="container py-5">
+          <div class="row">
+            <div class = "title text-center">
+                <h6 class = "position-relative d-inline-block text-green-dark">Our Properties</h6>
+                <h1 id="text-green">Properties</h1>
+                <h2 class="font-ubuntu">Our Featured Properties</h2>
+            </div>
+            <div class="cards-container row">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Js/product.js" type="module"></script>
+  </body>
+</html>
